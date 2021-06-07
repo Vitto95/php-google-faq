@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Domande frequenti - Privacy e termini - Google</title>
   <link rel="stylesheet" href="style/style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
+<!-- dati main -->
    <?php 
    
     $faqs = [
@@ -95,9 +98,45 @@
    
    ?>
 
+<header>
+  <div class="header-top">
+    <div class="left-content">
+      <div class="logo-wrapper">
+        <img src="img/googlelogo.svg" alt="logo-google">
+      </div>
+      <div class="link-wrapper">
+        <a href="#">Privacy e Termini</a>
+      </div>
+    </div>
+    <div class="right-content">
+      <i class="fas fa-th"></i>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="list-menu">
+      <ul>
+        <li>Introduzione</li>
+        <li>Norme sulla privacy</li>
+        <li>Termini di servizio</li>
+        <li>Tecnologie</li>
+        <li>Domande frequenti</li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+
+
+
+   <!-- Generazione contenuto principale: faqs -->
+
+   <main>
+   
+ 
+
    <?php foreach($faqs as $faq){ ?>
 
-     <h2> 
+   <h2> 
     <?php echo $faq["title"] ?> 
    </h2>
       <?php foreach($faq["content"] as $paragraph){ ?>
@@ -114,7 +153,7 @@
    <?php } ?>
     <?php } ?>
 
-
+  </main>
 
 </body>
 </html>

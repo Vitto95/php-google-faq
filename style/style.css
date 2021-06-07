@@ -1,6 +1,103 @@
-/* * {
+/* global */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
- */
+
+body {
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+/* /global */
+
+/* header */
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+.header-top,
+.header-bottom {
+  width: 100%;
+  height: 50px;
+}
+
+.header-top {
+  display: flex;
+  padding: 8px;
+}
+
+.header-top .left-content,
+.header-top .right-content {
+  width: 50%;
+  height: 100%;
+}
+
+.header-top .left-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-top .left-content .logo-wrapper {
+  height: 100%;
+}
+
+.header-top .left-content .logo-wrapper img {
+  height: 95%;
+}
+
+.header-top .right-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.link-wrapper {
+  margin-left: 10px;
+}
+
+.link-wrapper a {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.header-bottom {
+  padding: 8px;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.header-bottom .list-menu {
+  width: 100%;
+  height: 100%;
+}
+
+.header-bottom .list-menu ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.header-bottom .list-menu ul li {
+  width: 200px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* /header */
+
+/* main */
+
+/* main {
+  width: 90%;
+  margin: 0 auto;
+} */
+
+/*/main  */
